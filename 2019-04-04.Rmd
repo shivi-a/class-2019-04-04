@@ -1,0 +1,74 @@
+---
+title: '2019-04-04'
+author: "Shivani Aggarwal"
+date: "April 4, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+
+my_cold_call <- function() {
+  names <- c("Miss Abdilkhay, Adiya", "Miss Aggarwal, Shivani", "Bayramli, Ilkin",
+"Bharatha Chakravarthy, Hemanth",
+"Cai, Evelyn",
+"Chen, April",
+"Chok, Sabrina",
+"Chu, Simone",
+"Concannon, Celia",
+"De Loera-Brust, Andres",
+"Dobbins, Alexandra",
+"Dow, Nicholas",
+"Gildea, W. Tanner",
+"Gluck, Alistair",
+"Gonzalez, Debi",
+"Green, Tate",
+"Hoffner-Brodsky, Benjamin",
+"Huang, Jefferey Shawn",
+"Khurana, Neil",
+"Kim, Taehwan",
+"Lamas-Nino, Andrea",
+"Li, Jenny",
+"Martinez, Diego",
+"Meche, Beau",
+"Metropolitansky, Dasha",
+"Milne, Christopher",
+"Morzan, Igor",
+"Noor, Seeam",
+"Onesti, Christopher",
+"Rubbani, Shafi",
+"Schrage, Niel",
+"Shin, Seung Min Albert",
+"Silva, Michael",
+"Smiles, William",
+"Sun, Margaret",
+"Vendler, Celine",
+"Yao, Stephanie",
+"Zhang, Ruoqi",
+"Zhu, Henry")
+  
+ index <- sample(1:length(names), 1)
+ names[index]
+ 
+}
+  
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
