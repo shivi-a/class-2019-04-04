@@ -17,9 +17,10 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ```{r cars}
 
+
 my_cold_call <- function() {
   
-  name <- 
+
   names <- c("Miss Abdilkhay, Adiya", "Miss Aggarwal, Shivani", "Bayramli, Ilkin",
 "Bharatha Chakravarthy, Hemanth",
 "Cai, Evelyn",
@@ -59,8 +60,8 @@ my_cold_call <- function() {
 "Zhu, Henry")
   
  index <- sample(1:length(names), 1)
- strsplit(names[index], ", ")
- 
+ temp<- strsplit(names[index], ", ")
+ paste0(temp[2], " ", temp[1])
 }
   
 ```
